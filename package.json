@@ -26,9 +26,15 @@
     "express": "^4.15.3",
     "nodemailer": "^4.0.1",
     "swagpi": "^0.1.1",
-    "vorpal": "^1.12.0"
+    "vorpal": "^1.12.0",
+    "snyk": "^1.88.0"
   },
-  "engines" : { 
-    "node" : ">=7.0.0"
-  }
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
