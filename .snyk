@@ -1,8 +1,11 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.12.0
+version: v1.14.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:lodash:20180130':
     - vorpal > inquirer > lodash:
         patched: '2018-07-03T00:20:21.548Z'
+  SNYK-JS-LODASH-567746:
+    - vorpal > lodash:
+        patched: '2020-05-01T05:56:35.257Z'
